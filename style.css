@@ -1,0 +1,511 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Style for the header area */
+header {
+    background-color: 	#c1b1a2;
+    color: #292727;
+    padding: 15px 20px;
+    position: relative;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; */
+}
+
+.header-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+.nav-list a{
+    text-decoration: none;
+    color: #D4F6FF;
+}
+.nav-list a{
+    text-decoration: none;
+}
+.nav-list a:focus, .nav-list:active{
+    outline: none;
+}
+
+.nav-list li {
+    margin-left: 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.nav-list a:hover{
+    color: #f0a500;
+}
+
+.nav-list li:hover {
+    color: #f0a500;
+}
+
+.hero, .team, .services, .about {
+    width: 100vw;
+    min-height: 1000px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+/* section h1{
+    font-size: 5em;
+} */
+
+/* hero section */
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    background-color:#d7bca4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.hero .texthero {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.hero img {
+    width: 40%;
+    height: auto;
+    margin-right: 50px;
+    border-radius: 8px; /* Optional: To add a rounded corner */
+}
+
+.hero h2 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .hero .texthero {
+        width: 100%;
+        margin: 0;
+    }
+
+    .hero img {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .hero h2 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+}
+
+/* end of hero section */
+
+/* about section */
+/* About Section Container */
+/* About Section */
+.about {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #FBFBFB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    gap: 2rem;
+}
+
+/* Main Heading Style */
+.about h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Intro Paragraph */
+.about .intro {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* Section Titles */
+.about h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Paragraph Text */
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #555;
+    max-width: 80%;
+}
+
+/* Values List */
+.about ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 70%;
+}
+
+.about ul li {
+    margin-bottom: 0.8rem;
+}
+
+.about ul li strong {
+    color: #f39c12;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .about {
+        padding: 3rem 1rem;
+    }
+    .about h1 {
+        font-size: 2.5rem;
+    }
+    .about h2 {
+        font-size: 1.8rem;
+    }
+    .about p,
+    .about ul li {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 2rem 1rem;
+    }
+    .about h1 {
+        font-size: 2rem;
+    }
+    .about h2 {
+        font-size: 1.6rem;
+    }
+    .about p,
+    .about ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 1.5rem 1rem;
+    }
+    .about h1 {
+        font-size: 1.8rem;
+    }
+    .about h2 {
+        font-size: 1.4rem;
+    }
+    .about p,
+    .about ul li {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* end of about section */
+
+/* services section */
+/* Services Section */
+.services {
+    background-color: #FFDDAE;
+}
+.services h3{
+    font-size: 3rem;
+}
+
+.service-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Style each service box */
+.services section {
+    width: 500px;
+    height: auto; /* Allow the height to grow with content */
+    padding: 30px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 10%;
+    background-color: #dfd3c2;
+}
+
+.hardware, .software, .manuscript {
+    background-color: #D4F6FF;
+    position: relative; /* Add this to ensure proper positioning */
+}
+
+.hardware img, .software img{
+    width: 100%;
+    height: 60%;             /* Make the image cover the top 60% of the parent */
+    object-fit: cover;
+    margin-bottom: 20px;     /* Add space below the image */
+}
+.manuscript img{
+    width: 100%;
+    height: 80%;             /* Make the image cover the top 60% of the parent */
+    object-fit: cover;
+    margin-bottom: 30px; 
+}
+.manuscript p{
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 70px;
+}
+
+.hardware p, .software p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;         /* Add some margin to ensure the text isn't too close to the image */
+}
+
+/* End of Services Section */
+
+/* team section */
+.team {
+    background-color:#c1b1a2;
+}
+.team h3{
+    font-size: 3em;
+}
+.team-items{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 10%;
+}
+.team section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    flex-direction: column;
+    padding: 20px;
+}
+.team section img{
+    width: 100%;
+    max-width: 250px; /* Adjust this as needed */
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.cristene, .jorick, .jhodin, .neil, .carl{
+    width: 400px;
+    height: 400px;
+}
+/* cristene */
+.cristene, .jorick, .jhodin, .neil, .carl{
+    background-color: #FBFBFB;
+}
+.cristene{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
+.cristene img{
+    width: 25vw;
+    height: 25vh;
+}
+.tin{
+    border-radius: 50%;
+}
+
+/* jorick */
+.jorick{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
+.jorick img{
+    width: 25vw;
+    height: 25vh;
+}
+.rick{
+    border-radius: 50%;
+}
+
+/* jhodin */
+.jhodin{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
+.jhodin img{
+    width: 25vw;
+    height: 25vh;
+}
+.jhoe{
+    border-radius: 50%;
+}
+
+/* neil */
+.neil{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
+.neil img{
+    width: 25vw;
+    height: 25vh;
+}
+.denz{
+    border-radius: 50%;
+}
+.carl{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/* .cristene{
+    background-color: chartreuse;
+}
+.jorick{
+    background-color: beige;
+}
+.jhodin{
+    background-color: cadetblue;
+}
+.neil{
+    background-color: darkkhaki;
+} */
+/* Media query for tablet and phone screen sizes */
+@media (max-width: 1024px) {
+    /* Set service-items and team-items to flex-direction column */
+    .service-items,
+    .team-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust the width of each service and team section to fit the screen */
+    .services section,
+    .team section {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Further adjustments for smaller screens (phones) */
+    .services section,
+    .team section {
+        width: 100%;
+        max-width: 400px;
+    }
+    .manuscript p{
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.6;
+        margin-top: 20px;
+    }
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
